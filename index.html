@@ -1,0 +1,253 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust - Your Global Travel Partner</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- GSAP & ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ======================= -->
+    <!-- === HTML STRUCTURE === -->
+    <!-- ======================= -->
+
+    <!-- Header & Navigation -->
+    <header id="main-header">
+        <nav class="container">
+            <a href="#" class="logo">Wanderlust</a>
+            <ul class="nav-links">
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+             <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="anim-hero">Discover Your Next Adventure</h1>
+                <p class="anim-hero">Explore breathtaking destinations and create unforgettable memories with us.</p>
+                <a href="#packages" class="cta-button anim-hero">View Packages</a>
+            </div>
+        </section>
+
+        <!-- Top Destinations Section -->
+        <section id="destinations">
+            <div class="container">
+                <h2 class="section-title anim-title">Top Destinations</h2>
+                <div class="destinations-grid">
+                    <div class="destination-card anim-card">
+                        <img src="https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Maldives">
+                        <div class="destination-info">
+                            <h3>Maldives</h3>
+                            <p>Unrivaled luxury, stunning white-sand beaches and an amazing underwater world.</p>
+                        </div>
+                    </div>
+                    <div class="destination-card anim-card">
+                        <img src="https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bali, Indonesia">
+                        <div class="destination-info">
+                            <h3>Bali, Indonesia</h3>
+                            <p>A magical blend of culture, nature, and spirituality. The Island of the Gods awaits.</p>
+                        </div>
+                    </div>
+                    <div class="destination-card anim-card">
+                        <img src="https://images.pexels.com/photos/2474689/pexels-photo-2474689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Kyoto, Japan">
+                        <div class="destination-info">
+                            <h3>Kyoto, Japan</h3>
+                            <p>Experience ancient temples, serene gardens, and traditional geisha districts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Packages & Deals Section -->
+        <section id="packages">
+            <div class="container">
+                <h2 class="section-title anim-title">Travel Packages & Deals</h2>
+                <div class="packages-grid">
+                    <!-- Package 1: Flip Card -->
+                    <div class="package-card">
+                        <div class="package-front" style="background-image: url('https://images.pexels.com/photos/1450360/pexels-photo-1450360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+                           <div class="package-front-content">
+                             <h3>Beach Paradise Gateway</h3>
+                             <p class="price">$1,999 / person</p>
+                           </div>
+                        </div>
+                        <div class="package-back">
+                           <h3>Beach Paradise Gateway</h3>
+                           <ul>
+                               <li>7 nights in a 5-star resort</li>
+                               <li>Daily breakfast included</li>
+                               <li>Private airport transfers</li>
+                               <li>Snorkeling and scuba diving tour</li>
+                           </ul>
+                           <a href="#contact" class="cta-button">Book Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Package 2: Flip Card -->
+                    <div class="package-card">
+                        <div class="package-front" style="background-image: url('https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+                           <div class="package-front-content">
+                            <h3>Mountain Explorer Trek</h3>
+                             <p class="price">$2,499 / person</p>
+                           </div>
+                        </div>
+                        <div class="package-back">
+                           <h3>Mountain Explorer Trek</h3>
+                           <ul>
+                               <li>5-day guided mountain hike</li>
+                               <li>All camping gear provided</li>
+                               <li>Meals prepared by a chef</li>
+                               <li>Breathtaking summit views</li>
+                           </ul>
+                           <a href="#contact" class="cta-button">Book Now</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Package 3: Flip Card -->
+                    <div class="package-card">
+                        <div class="package-front" style="background-image: url('https://images.pexels.com/photos/3889854/pexels-photo-3889854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+                            <div class="package-front-content">
+                             <h3>Cultural City Immersion</h3>
+                             <p class="price">$1,799 / person</p>
+                            </div>
+                        </div>
+                        <div class="package-back">
+                            <h3>Cultural City Immersion</h3>
+                           <ul>
+                               <li>6 nights in a boutique hotel</li>
+                               <li>Guided historical city tours</li>
+                               <li>Local cooking class</li>
+                               <li>Museum and gallery passes</li>
+                           </ul>
+                           <a href="#contact" class="cta-button">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Travel With Us Section -->
+        <section id="why-us">
+            <div class="container">
+                <h2 class="section-title anim-title">Why Travel With Us?</h2>
+                <div class="why-us-grid">
+                    <div class="feature anim-feature">
+                        <div class="feature-icon">🌐</div>
+                        <h3>Expert Guides</h3>
+                        <p>Our local guides are passionate, knowledgeable, and ready to show you the hidden gems.</p>
+                    </div>
+                    <div class="feature anim-feature">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Safety First</h3>
+                        <p>Your safety is our top priority. We follow strict protocols to ensure a worry-free journey.</p>
+                    </div>
+                    <div class="feature anim-feature">
+                        <div class="feature-icon">💖</div>
+                        <h3>Personalized Service</h3>
+                        <p>We tailor every trip to your interests, ensuring a unique and personal experience.</p>
+                    </div>
+                    <div class="feature anim-feature">
+                        <div class="feature-icon">🌿</div>
+                        <h3>Sustainable Travel</h3>
+                        <p>We are committed to responsible tourism that benefits local communities and the environment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Experiences & Testimonials Section -->
+        <section id="testimonials">
+            <div class="container">
+                <h2 class="section-title anim-title">What Our Travelers Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card anim-testimonial">
+                        <p class="testimonial-text">Wanderlust planned the trip of a lifetime for us! Every detail was perfect, from the accommodations to the tours. We can't wait to book our next adventure.</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=160&h=150&dpr=1" alt="Author 1">
+                            <div class="author-info">
+                                <h4>Sarah L.</h4>
+                                <p>Traveled to Italy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card anim-testimonial">
+                        <p class="testimonial-text">The mountain trek in Peru was challenging but incredibly rewarding. Our guide was fantastic, and the views were simply out of this world. Highly recommended!</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=160&h=150&dpr=1" alt="Author 2">
+                             <div class="author-info">
+                                <h4>Michael B.</h4>
+                                <p>Traveled to Peru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Booking Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title anim-title">Start Your Journey Today</h2>
+                <form class="contact-form">
+                    <div class="form-group anim-form">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group anim-form">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group anim-form">
+                        <label for="destination">Dream Destination</label>
+                        <input type="text" id="destination" name="destination">
+                    </div>
+                    <div class="form-group anim-form">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button submit-btn anim-form">Send Inquiry</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Wanderlust. All Rights Reserved. Explore the World.</p>
+        </div>
+    </footer>
+
+    <script src="script.js">
+
+</script>
+</body>
+</html>
